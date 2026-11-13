@@ -1,11 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="PlanIt AI, éditeur d'outils de productivité pour les équipes de développement.">
+    <title>PlanIt AI</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
 <body>
-    
+    <header class="flex flex-row bg-slate-950 text-white items-center justify-between px-4 py-2 md:px-8 ">
+
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="PlanIt AI Logo">
+        </a>
+
+        <input type="checkbox" id="menu-toggle" class="peer sr-only">
+            <label for="menu-toggle"
+                class="cursor-pointer rounded border border-blue-800 px-3 py-2 text-sm peer-focus-visible:ring-2 peer-focus-visible:ring-blue-500 md:hidden">
+                Menu
+            </label>
+
+            <nav class="hidden peer-checked:flex gap-2 flex-col md:flex md:flex-row md:gap-6">
+                    <a href="index.html" aria-current="page" class="block border-b-2 border-blue-950 border-y-blue-800 py-2 px-3 hover:bg-blue-800 bg-blue-950">Dashboard</a>
+                    <a href="new-project.html" class="block py-2 px-3 hover:bg-blue-800 bg-blue-950">Nouveau projet</a>
+                    <button type="button" id="open-ai-settings" class="block py-2 px-3 hover:bg-blue-800 bg-blue-950">Paramètres IA</button>
+            </nav>
+                
+    </header>
+    <main>
+
+    </main>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
