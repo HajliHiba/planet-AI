@@ -24,21 +24,33 @@
             </label>
 
             <nav class="hidden peer-checked:flex gap-2 flex-col md:flex md:flex-row md:gap-6">
-                    <a href="index.html" aria-current="page" class="block border-b-2 border-blue-950 border-y-blue-800 py-2 px-3 hover:bg-blue-800 bg-blue-950">Dashboard</a>
-                    <a href="new-project.html" class="block py-2 px-3 hover:bg-blue-800 bg-blue-950">Nouveau projet</a>
-                    <button type="button" id="open-ai-settings" class="block py-2 px-3 hover:bg-blue-800 bg-blue-950">Paramètres IA</button>
+                    <a href="index.html" aria-current="page" class="block border-b-2 border-blue-950 border-y-blue-800 py-2 px-3 hover:bg-blue-800 bg-blue-950 rounded">Dashboard</a>
+                    <a href="new-project.html" class="block py-2 px-3 hover:bg-blue-800 bg-blue-950 rounded">Nouveau projet</a>
+                    <button type="button" id="open-ai-settings" class="block py-2 px-3 hover:bg-blue-800 bg-blue-950 rounded">Paramètres IA</button>
             </nav>
                 
     </header>
     <main class="">
-        <section class="bg-blue-950 h-20 flex flex row items-center justify-between px-4 py-2 md-px-8">
-            <h1 class="">Dashboard</h1>
-            <a href="new-project.html" id="nouveau-projet" class="">Nouveau projet</a>
+        <section class="bg-blue-950 h-20 flex flex-row items-center justify-between px-4 py-2 md:px-8">
+            <h1 class="text-white">Dashboard</h1>
+            <a href="new-project.html" id="nouveau-projet" class="text-white">Nouveau projet</a>
         </section>
-        <section class="" >
-            <div class="" >Aucun projet pour le moment, créez-en un pour générer votre premier plan.</div>
+            <p id="emptyState" class="text-center mt-8" >Aucun projet pour le moment, créez-en un pour générer votre premier plan.</p>
+        <section id="projects" class="" >
+            <article class="">
+                <h2 class=""></h2>
+                <p class="description"></p>
+                <p class="totalTasks"></p>
+                <p class="completedTasks"></p>
+                <p class="remainingTasks"></p>
+                <label class="block text-sm">
+                     <span class="percentage"></span>
+                     <progress value="" max="100" class="block w-full accent-indigo-600"></progress>
+                </label>
+                <a href="" class="taskBoard">Voir le Task Board</a>
+                <button type="button" class="">Supprimer</button>
+            </article>
         </section>
-
     </main>
     <script type="module" src="js/main.js"></script>
 </body>
